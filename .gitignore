@@ -1,0 +1,174 @@
+# ==============================================================================
+# Comprehensive .gitignore for NestJS / TypeScript / Prisma / Redis Project
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Dependencies & Package Managers
+# ------------------------------------------------------------------------------
+/node_modules/
+node_modules/
+jspm_packages/
+
+# Package Lock File (as requested)
+package-lock.json
+
+# Package Manager Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Yarn & Pnpm caches
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Sensitive Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging.local
+
+# Preserve the environment template file
+!.env.example
+
+# Private Keys & Certificates
+*.pem
+*.key
+*.cert
+*.crt
+
+# ------------------------------------------------------------------------------
+# Compiled Output & Build Artifacts
+# ------------------------------------------------------------------------------
+/dist/
+dist/
+/build/
+build/
+/out/
+out/
+
+# TypeScript Build & Incremental Caches
+*.tsbuildinfo
+tsconfig.build.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ------------------------------------------------------------------------------
+# Caches & Tooling Outputs
+# ------------------------------------------------------------------------------
+.cache/
+.npm/
+.eslintcache
+.oxlintcache
+.prettiercache
+.stylelintcache
+
+# ------------------------------------------------------------------------------
+# Logs & Diagnostic Reports
+# ------------------------------------------------------------------------------
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# ------------------------------------------------------------------------------
+# Test Files, Test Directory, Coverage Reports & Test Caches
+# ------------------------------------------------------------------------------
+/test/
+test/
+/coverage/
+coverage/
+/.nyc_output/
+.nyc_output/
+*.lcov
+*.coverage
+test-results/
+.jest-cache/
+.jest/
+*.spec.ts.snap
+*.test.ts.snap
+
+# ------------------------------------------------------------------------------
+# Temporary Files & Backups
+# ------------------------------------------------------------------------------
+.tmp/
+.temp/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------------------------
+# Database & Prisma Local Artifacts
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.db
+*.db-journal
+/generated/prisma/
+
+# ------------------------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ------------------------------------------------------------------------------
+# IDEs & Code Editors
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ IDEA, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Other Editors
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-project
+*.sublime-workspace
